@@ -1,0 +1,21 @@
+# Screens
+~/.screenlayout/monitors.sh &
+
+nm-applet &
+cbatticon &
+volumeicon &
+nitrogen --restore &
+picom -b --config ~/.config/picom.conf &
+
+# GNOME PolicyKit authentication
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Desktop notification
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+
+# On laptops without seperate numeric keyboard put hashtag in front
+numlockx on &
+
+~/.local/bin/intel-turbo off &
+~/.local/bin/asus-battery-threshold 60 &
+cpupower-gui profile Battery &
