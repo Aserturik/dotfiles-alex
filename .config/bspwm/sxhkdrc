@@ -89,7 +89,8 @@ super + alt + c
 	OpenApps --clipboard
 
 # Screenshot
-super + alt + s
+#super + alt + s
+Print
 	OpenApps --screenshot
 
 # Bluetooth
@@ -97,7 +98,7 @@ super + alt + b
 	OpenApps --bluetooth
 
 # PowerMenu
-super + alt + p
+super + x
 	OpenApps --powermenu
 
 # Manage brightness
@@ -140,7 +141,7 @@ super + {t,shift + t,s,f}
 # set the node flags
 ctrl + alt {m,x,s,p}
 	bspc node -g {marked,locked,sticky,private}
-
+ 
 # Hide/Unhide Window
 ctrl + alt + h
 	BspHideNode
@@ -182,7 +183,6 @@ super + alt + space
 	bspc node -p cancel
 
 #####
-	
 # expand a window
 ctrl + alt {Left,Down,Up,Right}
 	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}

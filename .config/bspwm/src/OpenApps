@@ -62,7 +62,7 @@ case "$1" in
         ;;
         # Apps
     --filemanager)
-        thunar
+        pcmanfm
         ;;
     --browser)
         firefox

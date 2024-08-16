@@ -18,7 +18,7 @@ read -r RICE < "$HOME"/.config/bspwm/.rice
 
 # Vars config for Emilia Rice
 # Bspwm border		# Fade windows true|false	# Shadows true|false	# Corner radius
-BORDER_WIDTH="0"	P_FADE="true"				P_SHADOWS="true"		P_CORNER_R="6"
+BORDER_WIDTH="2"	P_FADE="true"				P_SHADOWS="true"		P_CORNER_R="6"
 
 # (Tokyo Night) colorscheme
 bg="#1a1b26"  fg="#c0caf5"
