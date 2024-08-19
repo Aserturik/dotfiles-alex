@@ -21,7 +21,7 @@ Cover=/tmp/cover.png
 # if cover not found in metadata use this instead
 bkpCover=~/.config/bspwm/assets/fallback.webp
 # mpd music directory for mpd clients.
-mpddir=/run/media/alex/Disco\ duro/TODA\ LA\ QUE\ HAY
+mpddir=~/Music
 LAST_SONG_FILE="/tmp/last_song.txt"
 
 case $Control in
