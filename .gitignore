@@ -15,3 +15,12 @@
 !.Xresources
 !.config
 !.local
+
+#New
+!misc
+!CHANGELOG.md
+!INICIO.md
+!LICENCE
+!RiceInstaller
+!script1.sh
+!.zshrc
