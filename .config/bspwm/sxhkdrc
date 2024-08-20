@@ -26,7 +26,11 @@ super + m
 	OpenApps --menu
 
 # Redshift
+super + r
+    redshift -O 2400
 
+super + alt + r
+    redshift -x
 #####
 
 # Apps (browser, editor, filemanager)
