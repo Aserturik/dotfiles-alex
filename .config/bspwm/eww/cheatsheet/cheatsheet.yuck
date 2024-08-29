@@ -79,7 +79,7 @@
         (label :class "keys-alt" :xalign 1 :text "Super + 1-9"))
       (box :orientation "h" :space-evenly "true"
         (label :class "keys" :xalign 0 :text "Rotate workspace")
-        (label :class "keys-alt" :xalign 1 :text "Super + r"))
+        (label :class "keys-alt" :xalign 1 :text "Super + u"))
       (box :orientation "h" :space-evenly "true"
         (label :class "category-preselection" :xalign 0.5 :text "Preselection")
         (label :text ""))
