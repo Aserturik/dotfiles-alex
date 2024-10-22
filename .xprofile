@@ -2,8 +2,8 @@
 ~/.screenlayout/monitors.sh &
 
 nm-applet &
-cbatticon &
-volumeicon &
+# cbatticon &
+# volumeicon &
 nitrogen --restore &
 picom -b --config ~/.config/picom.conf &
 
@@ -19,3 +19,5 @@ numlockx on &
 ~/.local/bin/intel-turbo off &
 ~/.local/bin/asus-battery-threshold 60 &
 cpupower-gui profile Battery &
+
+syncthing -no-browser &
