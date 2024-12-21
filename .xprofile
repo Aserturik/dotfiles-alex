@@ -21,3 +21,4 @@ numlockx on &
 cpupower-gui profile Battery &
 
 syncthing -no-browser &
+~/particiones.sh
