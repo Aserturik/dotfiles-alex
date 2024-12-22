@@ -1,7 +1,7 @@
 #  ███████╗██╗  ██╗██╗  ██╗██╗  ██╗██████╗ ██████╗  ██████╗
 #  ██╔════╝╚██╗██╔╝██║  ██║██║ ██╔╝██╔══██╗██╔══██╗██╔════╝
-#  ███████╗ ╚███╔╝ ███████║█████╔╝ ██║  ██║██████╔╝██║
-#  ╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║
+#  ███████╗ ╚███╔╝ ███████║█████╔╝ ██║  ██║██████╔╝██║     
+#  ╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║     
 #  ███████║██╔╝ ██╗██║  ██║██║  ██╗██████╔╝██║  ██║╚██████╗
 #  ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝
 #	z0mbi3			https://github.com/gh0stzk/dotfiles
@@ -22,9 +22,15 @@ super + alt + Return
 	OpenApps --floating
 
 # Application menu
-super + @space
+super + m
 	OpenApps --menu
 
+# Redshift
+super + r
+    redshift -O 2400
+
+super + alt + r
+    redshift -x
 #####
 
 # Apps (browser, editor, filemanager)
@@ -52,7 +58,7 @@ super + alt + t
 
 # jgmenu
 ~button3
-  xqp 0 $(xdo id -N Bspwm -n root) && jgmenu --csv-file=~/.config/bspwm/src/config/jgmenu.txt --config-file=~/.config/bspwm/src/config/jgmenurc
+  xqp 0 $(xdo id -N Bspwm -n root) && jgmenu --csv-file=~/.config/bspwm/src/jgmenu/menu.txt --config-file=~/.config/bspwm/jgmenurc
 
 # Scratchpad
 super + alt + o
@@ -60,7 +66,7 @@ super + alt + o
 
 # Power off, Reboot, Log out, Lockscreen, kill an app
 ctrl + super + alt + {p,r,q,l,k}
-	{systemctl poweroff, systemctl reboot,bspc quit,ScreenLocker,xkill}
+	{systemctl poweroff, systemctl reboot,bspc quit,physlock -d,xkill}
 
 # Hide/Show Bar (Polybar and/or eww)
 super + alt + {h,u}
@@ -87,7 +93,8 @@ super + alt + c
 	OpenApps --clipboard
 
 # Screenshot
-super + alt + s
+#super + alt + s
+Print
 	OpenApps --screenshot
 
 # Bluetooth
@@ -95,7 +102,7 @@ super + alt + b
 	OpenApps --bluetooth
 
 # PowerMenu
-super + alt + p
+super + x
 	OpenApps --powermenu
 
 # Manage brightness
@@ -114,22 +121,22 @@ XF86Audio{Next,Prev,Play,Stop}
 #|||----- Bspwm hotkeys -----|||#
 
 # Reload BSPWM
-super + alt + r
+super + ctrl + r
 	bspc wm -r
 
 # close and kill
-super + {_,shift + }q
+super + {_,shift + }c
 	bspc node -{c,k}
-
+	
 # Reload Keybindings
 super + Escape
-	pkill -USR1 -x sxhkd; dunstify -u low -i ~/.config/bspwm/src/assets/reload.svg 'sxhkd' 'The configuration file has been reloaded successfully!'
+	pkill -USR1 -x sxhkd; dunstify -u low -i ~/.config/bspwm/assets/reload.svg 'sxhkd' 'The configuration file has been reloaded successfully!'
 
 #####
 
 # alternate between the tiled and monocle layout
-super + m
-	bspc desktop -l next
+#super + m
+#	bspc desktop -l next
 
 # set the window state
 super + {t,shift + t,s,f}
@@ -138,7 +145,7 @@ super + {t,shift + t,s,f}
 # set the node flags
 ctrl + alt {m,x,s,p}
 	bspc node -g {marked,locked,sticky,private}
-
+ 
 # Hide/Unhide Window
 ctrl + alt + h
 	BspHideNode
@@ -146,7 +153,7 @@ ctrl + alt + h
 #####
 
 # rotate desktop
-super + r
+super + u
 	bspc node @/ --rotate {90,-90}
 
 # Change focus of the Node or Swap Nodes
@@ -180,7 +187,6 @@ super + alt + space
 	bspc node -p cancel
 
 #####
-
 # expand a window
 ctrl + alt {Left,Down,Up,Right}
 	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
