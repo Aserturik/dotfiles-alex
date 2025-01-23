@@ -174,7 +174,7 @@ fi
 
 logo "Downloading dotfiles"
 
-repo_url="https://github.com/gh0stzk/dotfiles"
+repo_url="https://github.com/aserturik/dotfiles-alex"
 repo_dir="$HOME/dotfiles"
 
 # Verifies if the folder of the repository exists, and if it does, deletes it
@@ -468,7 +468,7 @@ clear
 
 ########## --------- exit ---------- ##########
 
-logo "Installation is compñete"
+logo "Installation is complete"
 
 printf "%sThe installation is complete, you %sneed%s to restart your machine.%s\n\n" "${BLD}" "${CBL}" "${CNC}" "${CNC}"
 
