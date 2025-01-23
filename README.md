@@ -337,9 +337,9 @@ curl https://raw.githubusercontent.com/aserturik/dotfiles-alex/main/RiceInstalle
 ```
 - **Now give it execute permissions**
 ```sh
-chmod +x RiceInstaller
+chmod +x Installer
 ```
 - **Finally run the installer**
 ```sh
-./RiceInstaller
+./Installer
 ```
