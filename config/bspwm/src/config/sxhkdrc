@@ -8,7 +8,7 @@
 #
 
 # Show help
-alt + F1
+F1
 	OpenApps --KeyHelp
 
 ############################
@@ -22,13 +22,20 @@ super + {_,alt + }Return
 	OpenApps --{terminal,floating}
 
 # App launcher
-super + @space
+super + m
 	OpenApps --menu
 
 # Theme Selector
 alt + @space
 	RiceSelector
 
+# Redshift
+super + r
+    redshift -O 2400
+
+super + alt + r
+    redshift -x
+#
 # ----- Your Apps ----- #
 
 # Apps (browser, editor, filemanager)
