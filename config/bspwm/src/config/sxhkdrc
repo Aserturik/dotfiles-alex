@@ -180,7 +180,7 @@ ctrl + Tab
 	bspc node -f next.local.!hidden.window
 
 # Swap Nodes
-ctrl + shift + {Left,Down,Up,Right}
+super + shift + {h,j,k,l}
 	bspc node -s {west,south,north,east}.local
 
 # Focus the last node/desktop
@@ -189,7 +189,7 @@ ctrl + shift {comma,period}
 
 # Preselect the direction (horizontal, vertical or cancel)
 super + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+	bspc node -f {west,south,north,east}
 
 # ----- Expand/Shrink Nodes ----- #
 
