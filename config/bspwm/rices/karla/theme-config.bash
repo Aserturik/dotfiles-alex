@@ -35,7 +35,7 @@ BOTTOM_PADDING="1"
 LEFT_PADDING="1"
 RIGHT_PADDING="1"
 NORMAL_BC="#353c52"		# Normal border color
-FOCUSED_BC="#353c52"	# Focused border color
+FOCUSED_BC="#fff"	# Focused border color
 
 # Terminal font & size
 term_font_size="10"

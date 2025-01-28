@@ -29,7 +29,7 @@ accent_color="#2E2E2E"
 arch_icon="#0f94d2"
 
 # Bspwm options
-BORDER_WIDTH="0"		# Bspwm border
+BORDER_WIDTH="2"		# Bspwm border
 TOP_PADDING="46"
 BOTTOM_PADDING="1"
 LEFT_PADDING="1"

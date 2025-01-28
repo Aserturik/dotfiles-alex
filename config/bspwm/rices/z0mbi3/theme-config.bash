@@ -21,7 +21,7 @@ redb="#dd6777"
 greenb="#90ceaa"
 yellowb="#ecd3a0"
 blueb="#86aaec"
-magentab="#c296eb"
+magentab="#c296e3"
 cyanb="#93cee9"
 whiteb="#cbced3"
 
@@ -29,7 +29,7 @@ accent_color="#151720"
 arch_icon="#0f94d2"
 
 # Bspwm options
-BORDER_WIDTH="0"		# Bspwm border
+BORDER_WIDTH="2"		# Bspwm border
 TOP_PADDING="1"
 BOTTOM_PADDING="1"
 LEFT_PADDING="60"
