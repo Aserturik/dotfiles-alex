@@ -333,7 +333,6 @@ And more.. You need to look sxhkdrc file for more, or press Alt + F1 for a cheat
 - **Open a terminal in HOME and download the installer**
 ```sh
 curl https://raw.githubusercontent.com/aserturik/dotfiles-alex/main/Installer -o $HOME/Installer
-
 ```
 - **Now give it execute permissions**
 ```sh
