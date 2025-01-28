@@ -175,10 +175,6 @@ super + {_,ctrl + }{1-9,0}
 super + alt + {Left,Right}
 	bspc node -d {prev,next} '--follow'
 
-# Cycle focus through nodes.
-ctrl + Tab
-	bspc node -f next.local.!hidden.window
-
 # Swap Nodes
 super + shift + {h,j,k,l}
 	bspc node -s {west,south,north,east}.local
