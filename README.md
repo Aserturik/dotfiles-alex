@@ -1,11 +1,6 @@
 # A complete BSPWM Window Manager Environment
 <div align = center>
 
-![bspwm-dotfiles](https://github.com/gh0stzk/dotfiles/assets/67278339/0340846a-74d4-4a43-9430-142b0832738d)
-
-
-
-
 &ensp;[<kbd> <br> Install <br> </kbd>](#-installation)&ensp;
 &ensp;[<kbd> <br> Features <br> </kbd>](#-features)&ensp;
 &ensp;[<kbd> <br> Themes <br> </kbd>](#-the-themes)&ensp;
@@ -17,9 +12,7 @@ https://github.com/user-attachments/assets/3eaae1e2-04dc-4a9b-8c91-139f85f5fb9e
 
 <br>
 
-## 👻 Welcome
-
-Welcome to my dotfiles. I’m gh0stzk from Mexico.
+## 🐧 Welcome
 
 These dotfiles are designed with the goal of providing a bspwm environment that is lightweight, efficient, and functional, tailored for any use—whether it’s gaming, web browsing, or a productive work setting.
 
