@@ -10,7 +10,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         event = { "BufReadPre", "BufNewFile" },
         opts = {
-            ensure_installed = { "bashls", "lua_ls", "cssls" },
+            ensure_installed = { "bashls", "lua_ls", "cssls", "astro", "eslint", "html", "tailwindcss" },
             auto_install = true,
         },
     },
@@ -30,6 +30,8 @@ return {
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
             })
+            lspconfig.astro.setup({})
+            lspconfig.tailwindcss.setup({})
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, { desc = "Declaration" })
