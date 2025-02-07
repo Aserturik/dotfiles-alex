@@ -31,15 +31,12 @@ return {
                 capabilities = capabilities,
             })
             lspconfig.astro.setup({
-               capabilities = capabilities,
+                capabilities = capabilities,
             })
---            lspconfig.tailwindcss.setup({
---                capabilities = capabilities,
---            })
+            lspconfig.tailwindcss.setup({
+                capabilities = capabilities,
+            })
             lspconfig.ast_grep.setup({
-              capabilities = capabilities,
-filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-root_dir = require("lspconfig.util").root_pattern(".git", "package.json")
             })
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
