@@ -39,8 +39,8 @@ map("n", "<C-h>", "<C-w>h", { desc = "Navigate left" })
 map("n", "<C-l>", "<C-w>l", { desc = "Navigate right" })
 
 -- Change 2 split windows from vertical to horizontal or vice versa
-map("n", "<leader>th", "<C-w>t<C-w>H", { desc = "Change window splits to horizontal", noremap = true})
-map("n", "<leader>tk", "<C-w>t<C-w>K", { desc = "Change window splits to vertical", noremap = true})
+map("n", "<leader>th", "<C-w>t<C-w>H", { desc = "Change window splits to horizontal", noremap = true })
+map("n", "<leader>tk", "<C-w>t<C-w>K", { desc = "Change window splits to vertical", noremap = true })
 
 -- Resize window
 map("n", "<C-Up>", ":resize -3<CR>")
@@ -55,7 +55,7 @@ map("n", "<leader>x", ":BufferClose<CR>", { desc = "Buffer close", noremap = tru
 map("n", "<A-p>", ":BufferPin<CR>", { desc = "Pin buffer", noremap = true })
 
 -- Comments
-map({"n", "v"}, "<leader>co", ":CommentToggle<cr>", { desc = "CommentToggle", noremap = true })
+map({ "n", "v" }, "<leader>co", ":CommentToggle<cr>", { desc = "CommentToggle", noremap = true })
 
 -- Neotree
 map("n", "<leader>b", ":Neotree toggle<CR>", { desc = "Toggle Neotree", noremap = true })
@@ -69,6 +69,9 @@ map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Telescope buffers
 
 -- Spectre
 map('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre", noremap = true })
-map('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Spectre Search current word", noremap = true })
-map('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word", noremap = true })
-map('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file", noremap = true})
+map('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>',
+    { desc = "Spectre Search current word", noremap = true })
+map('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>',
+    { desc = "Search current word", noremap = true })
+map('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',
+    { desc = "Search on current file", noremap = true })
