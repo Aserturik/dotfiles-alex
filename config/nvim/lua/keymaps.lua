@@ -58,8 +58,8 @@ map("n", "<A-p>", ":BufferPin<CR>", { desc = "Pin buffer", noremap = true })
 map({ "n", "v" }, "<leader>co", ":CommentToggle<cr>", { desc = "CommentToggle", noremap = true })
 
 -- Neotree
-map("n", "<leader>b", ":Neotree toggle<CR>", { desc = "Toggle Neotree", noremap = true })
-map("n", "<leader>nb", ":Neotree buffer reveal float<CR>", { desc = "Neotree buffers reveal", noremap = true })
+map("n", "<leader>b", ":Neotree toggle reveal right<CR>", { desc = "Toggle Neotree", noremap = true })
+map("n", "<leader>nb", ":Neotree buffers reveal float<CR>", { desc = "Neotree buffers reveal", noremap = true })
 
 -- Telescope
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Telescope find_files", noremap = true })

@@ -1,10 +1,7 @@
 return {
     "nvim-neo-tree/neo-tree.nvim",
-    keys = { -- only load the plugin on these keymaps
-        { "<leader>b",  ":Neotree toggle <CR>" },
-        { "<leader>nb", ":Neotree buffers reveal float<CR>" },
-    },
     branch = "v3.x",
+    lazy = false,
     dependencies = {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons",
@@ -21,6 +18,9 @@ return {
                 statusline = false,
             },
             filesystem = {
+                window = {
+                    position = "right",
+                },
                 filtered_items = {
                     visible = true,
                     show_hidden_count = true,
