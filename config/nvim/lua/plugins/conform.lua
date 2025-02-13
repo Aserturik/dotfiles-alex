@@ -20,6 +20,7 @@ return {
                 astro = { "astro" },
                 markdown = { "prettier" },
                 python = { "black" },
+                yaml = { "prettier" },
             },
         })
         vim.keymap.set({ "n", "v" }, "<leader>gf", function()

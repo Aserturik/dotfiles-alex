@@ -10,7 +10,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         event = { "BufReadPre", "BufNewFile" },
         opts = {
-            ensure_installed = { "bashls", "lua_ls", "cssls", "astro", "eslint", "html", "tailwindcss", "ast_grep" },
+            ensure_installed = { "bashls", "lua_ls", "cssls", "astro", "eslint", "html", "tailwindcss", "ast_grep", "yamlls" },
             auto_install = true,
         },
     },
@@ -37,6 +37,10 @@ return {
                 capabilities = capabilities,
             })
             lspconfig.ast_grep.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.yamlls.setup({
+                capabilities = capabilities,
             })
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
