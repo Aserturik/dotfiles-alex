@@ -14,6 +14,8 @@ return {
                 json = { "prettier" },
                 javascriptreact = { "prettier" },
                 typescriptreact = { "prettier" },
+                javascript = { "prettier" },
+                typescript = { "prettier" },
                 jsx = { "prettier" },
                 tsx = { "prettier" },
                 html = { "prettier" },
@@ -21,6 +23,7 @@ return {
                 markdown = { "prettier" },
                 python = { "black" },
                 yaml = { "prettier" },
+                google_java_format = { "java" },
             },
         })
         vim.keymap.set({ "n", "v" }, "<leader>gf", function()
