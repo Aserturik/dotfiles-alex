@@ -10,7 +10,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         event = { "BufReadPre", "BufNewFile" },
         opts = {
-            ensure_installed = { "bashls", "lua_ls", "cssls", "astro", "biome", "html", "tailwindcss", "ast_grep", "yamlls" },
+            ensure_installed = { "bashls", "lua_ls", "cssls", "astro", "biome", "html", "tailwindcss", "ast_grep", "yamlls", "sqlls" },
             auto_install = true,
         },
     },
@@ -26,6 +26,11 @@ return {
             })
             lspconfig.biome.setup({
                 capabilities = capabilities,
+            })
+            lspconfig.sqlls.setup({
+                cmd = { "sql-language-server", "up", "--method", "stdio" },
+                filetypes = { "sql", "mysql" },
+                root_dir = require('lspconfig.util').root_pattern(".git", vim.fn.getcwd()),
             })
             lspconfig.cssls.setup({
                 capabilities = capabilities,

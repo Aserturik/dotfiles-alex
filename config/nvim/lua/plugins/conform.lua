@@ -23,7 +23,7 @@ return {
                 markdown = { "prettier" },
                 python = { "black" },
                 yaml = { "prettier" },
-                google_java_format = { "java" },
+                sql = { "sqlfluff" },
             },
         })
         vim.keymap.set({ "n", "v" }, "<leader>gf", function()
