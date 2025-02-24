@@ -10,7 +10,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         event = { "BufReadPre", "BufNewFile" },
         opts = {
-            ensure_installed = { "bashls", "lua_ls", "cssls", "astro", "biome", "html", "tailwindcss", "ast_grep", "yamlls", "sqlls" },
+            ensure_installed = { "bashls", "lua_ls", "cssls", "astro", "biome", "html", "tailwindcss", "ast_grep", "yamlls", "sqlls", "pylsp" },
             auto_install = true,
         },
     },
@@ -23,6 +23,9 @@ return {
             local lspconfig = require("lspconfig")
             lspconfig.bashls.setup({
                 capabilities = capabilities,
+            })
+            lspconfig.pylsp.setup({
+                capabilities = capabilities;
             })
             lspconfig.biome.setup({
                 capabilities = capabilities,
